@@ -1,0 +1,201 @@
+product_id,product_name,category,price,stock_quantity,status,created_at
+1,Synergistic well-modulated algorithm,Electronics,1327.22,328,ACTIVE,2025-09-05 07:19:51.880715
+2,Mandatory tangible orchestration,Electronics,1574.66,124,ACTIVE,2026-09-08 01:37:05.198552
+3,Public-key regional leverage,Sports,414.39,424,ACTIVE,2026-01-20 21:40:29.335586
+4,Operative heuristic encoding,Sports,435.82,445,ACTIVE,2026-06-10 02:10:44.799658
+5,Expanded responsive software,Books,1549.87,403,ACTIVE,2025-11-25 14:18:03.425072
+6,Total system-worthy function,Books,1717.52,74,ACTIVE,2025-03-01 07:17:49.358099
+7,Robust background product,Sports,505.06,89,ACTIVE,2026-04-19 10:45:32.106543
+8,Managed fault-tolerant core,Beauty,1733.56,67,ACTIVE,2024-10-26 13:27:16.919667
+9,Profound systematic success,Books,1581.02,121,INACTIVE,2026-04-30 21:33:12.664376
+10,Sharable full-range contingency,Electronics,352.62,26,ACTIVE,2025-03-23 08:02:24.086480
+11,Digitized 6thgeneration complexity,Beauty,844.82,58,ACTIVE,2024-12-31 10:20:42.066160
+12,Cloned heuristic algorithm,Clothing,899.31,185,ACTIVE,2026-04-22 19:58:15.551490
+13,Pre-emptive homogeneous flexibility,Clothing,1010.16,484,ACTIVE,2026-09-29 12:12:48.977079
+14,Re-contextualized scalable knowledgebase,Beauty,1567.54,443,INACTIVE,2026-05-11 01:17:51.148852
+15,Horizontal mission-critical ability,Clothing,1288.46,15,ACTIVE,2026-03-07 08:27:09.874843
+16,Adaptive client-driven instruction set,Clothing,1695.36,218,ACTIVE,2026-09-11 05:36:52.309425
+17,Persistent hybrid function,Clothing,1426.24,227,ACTIVE,2025-05-17 20:38:43.194381
+18,Synchronized well-modulated Internet solution,Electronics,647.61,75,ACTIVE,2025-10-01 14:59:01.452560
+19,Innovative object-oriented knowledge user,Home,553.66,324,INACTIVE,2025-12-11 05:49:36.730308
+20,Integrated background instruction set,Clothing,1989.28,271,INACTIVE,2026-05-23 05:37:58.262168
+21,Networked grid-enabled interface,Clothing,1013.57,220,ACTIVE,2026-02-20 11:51:27.055308
+22,Automated eco-centric groupware,Beauty,233.26,335,ACTIVE,2024-10-28 03:07:50.202926
+23,Open-source dynamic help-desk,Clothing,905.85,116,INACTIVE,2025-05-21 21:54:30.247521
+24,Face-to-face methodical customer loyalty,Books,1655.7,204,INACTIVE,2024-10-31 11:55:47.996360
+25,User-centric human-resource flexibility,Beauty,194.7,218,INACTIVE,2025-11-20 18:15:03.222080
+26,Seamless contextually-based Local Area Network,Beauty,513.51,488,ACTIVE,2025-08-22 10:10:57.201950
+27,Customizable scalable open system,Beauty,1846.36,34,ACTIVE,2026-01-21 20:54:47.284255
+28,Devolved non-volatile standardization,Electronics,190.99,49,INACTIVE,2025-07-08 16:51:32.660615
+29,Inverse demand-driven application,Home,1114.96,300,INACTIVE,2026-02-23 11:39:14.490486
+30,Reverse-engineered maximized success,Beauty,248.85,181,INACTIVE,2024-10-09 19:37:44.644815
+31,Multi-layered grid-enabled budgetary management,Beauty,107.63,147,INACTIVE,2025-01-29 23:40:52.016440
+32,Diverse maximized installation,Books,211.68,259,ACTIVE,2026-02-08 15:45:29.243637
+33,Optimized exuding encoding,Home,1315.19,114,ACTIVE,2026-09-25 07:35:49.633967
+34,Intuitive reciprocal frame,Books,1691.52,188,ACTIVE,2026-08-04 05:53:51.892389
+35,Secured next generation open system,Books,1150.33,413,INACTIVE,2026-04-14 16:34:51.469342
+36,Seamless hybrid hardware,Sports,1949.22,419,ACTIVE,2026-08-08 22:46:03.019804
+37,Open-source stable Internet solution,Sports,1858.52,424,INACTIVE,2025-04-03 04:11:13.286546
+38,Managed web-enabled firmware,Electronics,364.93,359,INACTIVE,2026-07-04 22:13:55.374878
+39,Implemented value-added definition,Books,705.29,92,ACTIVE,2025-05-16 13:10:17.106992
+40,Function-based zero tolerance archive,Sports,1316.4,35,ACTIVE,2026-05-05 07:57:34.154489
+41,Integrated reciprocal capability,Beauty,1268.18,15,ACTIVE,2025-07-19 22:13:51.137170
+42,Robust optimizing encryption,Beauty,1063.31,192,INACTIVE,2026-04-07 01:02:25.558812
+43,Fully-configurable tertiary firmware,Clothing,685.09,189,INACTIVE,2025-04-23 11:06:43.834336
+44,Organized executive definition,Beauty,652.14,482,ACTIVE,2025-11-27 23:21:01.008222
+45,Future-proofed incremental firmware,Electronics,315.38,386,ACTIVE,2024-10-16 13:15:18.611254
+46,Virtual systematic protocol,Beauty,167.76,226,INACTIVE,2026-02-27 01:19:31.291125
+47,Down-sized client-server definition,Clothing,1216.12,212,INACTIVE,2024-11-07 21:09:33.366664
+48,Managed motivating instruction set,Home,1511.11,58,INACTIVE,2025-01-05 17:29:21.211361
+49,Up-sized mission-critical success,Clothing,226.23,347,INACTIVE,2026-08-18 03:14:38.885158
+50,Re-engineered static monitoring,Sports,1335.93,23,ACTIVE,2026-01-16 08:55:30.258240
+51,Programmable optimal flexibility,Clothing,1968.97,28,ACTIVE,2024-12-15 21:03:23.465234
+52,Diverse bi-directional access,Home,606.33,108,ACTIVE,2026-10-02 19:26:21.436709
+53,Virtual object-oriented knowledge user,Books,582.45,61,ACTIVE,2025-01-06 07:15:08.832094
+54,Team-oriented context-sensitive budgetary management,Clothing,1495.29,89,ACTIVE,2026-06-24 12:37:22.495570
+55,Virtual 6thgeneration matrices,Clothing,1067.5,117,INACTIVE,2025-05-30 17:50:33.722597
+56,Programmable grid-enabled core,Electronics,797.16,379,ACTIVE,2025-05-01 16:49:23.487064
+57,Triple-buffered zero tolerance installation,Clothing,42.39,471,ACTIVE,2025-07-01 16:19:49.029931
+58,Phased optimal capacity,Books,1153.64,293,INACTIVE,2026-06-23 14:13:18.786942
+59,De-engineered 5thgeneration encryption,Beauty,1282.08,148,ACTIVE,2024-10-11 10:15:42.280878
+60,Innovative even-keeled open system,Clothing,46.61,166,ACTIVE,2025-08-16 04:25:34.213145
+61,Innovative homogeneous architecture,Sports,922.89,353,INACTIVE,2025-01-20 09:29:13.302475
+62,Seamless directional open system,Electronics,876.24,54,ACTIVE,2024-11-12 21:29:09.321229
+63,Assimilated client-server support,Clothing,1179.8,268,ACTIVE,2026-07-04 21:55:37.596924
+64,Customer-focused client-driven time-frame,Clothing,1741.7,381,INACTIVE,2024-12-26 20:43:36.130328
+65,Upgradable maximized groupware,Home,669.47,86,ACTIVE,2026-06-23 02:26:37.315685
+66,Multi-channeled multi-tasking strategy,Sports,1268.28,271,ACTIVE,2025-12-12 13:43:46.639112
+67,Ergonomic full-range paradigm,Books,705.44,490,ACTIVE,2025-06-07 10:56:47.181121
+68,Synergistic methodical ability,Home,210.1,131,ACTIVE,2025-11-13 16:44:14.700064
+69,Optional attitude-oriented orchestration,Home,1206.79,389,ACTIVE,2025-12-23 05:18:36.835148
+70,Cloned empowering strategy,Home,1902.83,321,INACTIVE,2025-06-24 08:10:36.594067
+71,Innovative content-based firmware,Clothing,1510.12,389,INACTIVE,2026-02-24 05:54:44.910972
+72,Object-based human-resource definition,Beauty,1848.69,289,INACTIVE,2024-12-04 20:02:03.794523
+73,Face-to-face needs-based neural-net,Beauty,635.7,225,ACTIVE,2025-07-02 00:05:22.086296
+74,Expanded explicit contingency,Clothing,887.21,155,INACTIVE,2025-02-20 03:46:27.902932
+75,Open-source cohesive secured line,Sports,117.06,259,ACTIVE,2026-03-29 04:33:42.218130
+76,Automated dynamic core,Books,926.18,19,ACTIVE,2025-05-18 11:22:52.847787
+77,Implemented contextually-based firmware,Books,1664.23,39,ACTIVE,2025-07-28 00:03:04.735066
+78,Streamlined bi-directional adapter,Sports,1190.19,196,INACTIVE,2025-05-12 01:38:16.029370
+79,Switchable local structure,Sports,1110.86,405,ACTIVE,2025-12-01 06:41:30.527597
+80,Profit-focused user-facing solution,Clothing,1818.55,292,ACTIVE,2026-02-08 22:21:01.192324
+81,Switchable hybrid toolset,Books,1211.99,256,ACTIVE,2026-05-27 03:13:39.876621
+82,Assimilated 5thgeneration neural-net,Electronics,903.79,415,INACTIVE,2026-05-05 03:47:51.624503
+83,Streamlined foreground strategy,Beauty,173.24,330,ACTIVE,2026-03-05 01:45:13.095392
+84,Digitized non-volatile focus group,Electronics,499.25,224,INACTIVE,2025-07-09 15:09:43.615077
+85,Reduced actuating collaboration,Sports,1047.88,81,INACTIVE,2026-07-13 07:10:40.253555
+86,Streamlined background project,Books,1836.28,198,INACTIVE,2026-01-31 01:38:25.843349
+87,Pre-emptive leadingedge forecast,Books,1359.4,26,INACTIVE,2024-11-20 01:21:29.366306
+88,Fundamental content-based alliance,Electronics,662.73,285,INACTIVE,2025-05-12 16:22:07.373392
+89,Intuitive analyzing collaboration,Books,507.73,436,ACTIVE,2025-03-19 19:59:40.076642
+90,Multi-lateral actuating complexity,Books,167.6,339,ACTIVE,2025-01-30 08:00:33.203436
+91,Realigned reciprocal focus group,Books,623.91,335,INACTIVE,2025-08-08 08:36:39.617070
+92,Mandatory contextually-based knowledge user,Home,1192.11,480,ACTIVE,2026-04-06 00:56:01.762942
+93,Upgradable web-enabled task-force,Books,1120.05,329,INACTIVE,2025-01-28 12:06:38.280309
+94,Exclusive client-driven model,Home,1341.88,424,ACTIVE,2026-09-30 02:44:47.870082
+95,Secured discrete access,Beauty,1342.56,260,INACTIVE,2025-01-11 13:32:21.344143
+96,Devolved full-range initiative,Electronics,728.38,92,ACTIVE,2025-11-27 00:30:23.594711
+97,Customer-focused didactic database,Books,1895.6,248,ACTIVE,2026-07-07 05:33:23.604539
+98,Focused 3rdgeneration definition,Home,1999.95,79,ACTIVE,2025-02-25 02:32:52.890681
+99,Open-source maximized intranet,Books,1689.63,51,ACTIVE,2024-11-22 11:22:44.670309
+100,Team-oriented bottom-line secured line,Beauty,676.84,392,ACTIVE,2026-07-24 02:20:29.288051
+101,Persevering high-level access,Sports,756.56,83,ACTIVE,2025-08-19 14:51:51.745142
+102,Optimized client-server time-frame,Beauty,1543.34,414,ACTIVE,2025-09-18 11:00:04.236070
+103,Seamless grid-enabled system engine,Beauty,878.16,210,INACTIVE,2026-05-21 11:49:10.466106
+104,Fully-configurable value-added approach,Beauty,1440.57,496,INACTIVE,2025-02-07 18:54:52.295511
+105,Stand-alone holistic database,Sports,573.43,383,INACTIVE,2024-11-13 22:46:21.656064
+106,Enhanced discrete support,Home,1070.35,158,INACTIVE,2025-12-02 22:35:14.026650
+107,Visionary empowering matrix,Home,738.84,484,INACTIVE,2025-02-05 15:29:11.587891
+108,Assimilated didactic flexibility,Clothing,1540.03,398,INACTIVE,2026-03-11 13:39:07.705197
+109,De-engineered 6thgeneration capacity,Sports,1057.28,494,ACTIVE,2025-11-02 14:22:21.765055
+110,Persevering asymmetric website,Home,1603.51,70,INACTIVE,2025-12-02 19:11:39.869336
+111,User-centric zero administration adapter,Electronics,1284.15,447,INACTIVE,2024-12-09 09:09:59.526666
+112,Universal cohesive complexity,Sports,1868.92,364,ACTIVE,2026-01-30 12:32:53.936376
+113,De-engineered explicit application,Books,172.33,82,INACTIVE,2026-07-09 14:48:09.536974
+114,Centralized leadingedge success,Clothing,1811.09,75,INACTIVE,2025-08-02 02:56:29.688175
+115,Fundamental stable moratorium,Electronics,1893.09,113,INACTIVE,2025-09-06 21:41:04.587166
+116,Vision-oriented bi-directional leverage,Books,1861.29,212,ACTIVE,2026-01-16 02:45:06.089754
+117,Team-oriented modular Graphic Interface,Clothing,1006.5,120,INACTIVE,2026-05-29 12:50:02.406505
+118,Open-source bi-directional process improvement,Electronics,752.95,14,INACTIVE,2026-05-01 15:28:16.389627
+119,Right-sized contextually-based firmware,Electronics,1679.16,332,INACTIVE,2024-11-09 13:31:13.549684
+120,Multi-lateral scalable moratorium,Home,279.51,146,INACTIVE,2025-03-19 02:37:21.570610
+121,Organic coherent toolset,Beauty,1663.07,388,INACTIVE,2026-02-11 00:09:32.257455
+122,Self-enabling client-server Graphical User Interface,Clothing,1232.62,463,ACTIVE,2025-10-08 11:23:04.616232
+123,Cloned contextually-based collaboration,Electronics,515.57,427,ACTIVE,2025-05-23 07:37:28.367707
+124,Balanced optimal toolset,Sports,1880.75,311,INACTIVE,2026-02-18 15:26:21.534542
+125,Networked hybrid task-force,Electronics,1553.46,121,INACTIVE,2025-10-28 22:02:35.866575
+126,Universal eco-centric middleware,Electronics,100.26,214,INACTIVE,2026-03-17 09:20:49.940545
+127,Digitized dynamic matrix,Electronics,226.16,463,INACTIVE,2025-04-03 23:17:53.086461
+128,Ergonomic local orchestration,Sports,1074.43,323,ACTIVE,2026-04-19 01:14:58.068038
+129,Compatible contextually-based attitude,Beauty,291.44,219,ACTIVE,2025-01-06 23:03:55.130183
+130,Cross-group actuating capability,Sports,708.87,292,INACTIVE,2025-10-26 19:53:31.779903
+131,Profound 6thgeneration encoding,Home,1330.42,43,INACTIVE,2026-02-25 01:39:18.137229
+132,Team-oriented neutral instruction set,Electronics,1907.04,278,ACTIVE,2026-05-16 18:04:12.025249
+133,User-friendly reciprocal application,Clothing,1747.3,22,INACTIVE,2026-02-05 03:24:17.977586
+134,Compatible logistical application,Books,511.03,8,INACTIVE,2026-06-26 09:01:23.452671
+135,Pre-emptive explicit solution,Electronics,692.88,375,ACTIVE,2024-10-30 08:12:20.880343
+136,Self-enabling directional policy,Sports,1471.7,170,ACTIVE,2025-01-22 08:16:36.346971
+137,Customer-focused optimizing process improvement,Electronics,707.84,173,ACTIVE,2025-12-28 21:28:12.340753
+138,Team-oriented heuristic conglomeration,Beauty,931.92,356,INACTIVE,2025-12-14 23:05:35.575049
+139,User-centric well-modulated budgetary management,Beauty,368.64,69,ACTIVE,2025-09-29 20:33:23.371953
+140,Enhanced context-sensitive circuit,Beauty,1553.5,234,ACTIVE,2026-07-27 07:41:47.297863
+141,Networked value-added extranet,Books,407.17,405,ACTIVE,2025-04-04 11:02:11.705393
+142,Realigned logistical contingency,Electronics,634.61,158,INACTIVE,2025-01-31 11:24:23.053869
+143,Multi-lateral explicit collaboration,Sports,949.43,18,ACTIVE,2025-01-17 10:39:51.338687
+144,Multi-tiered context-sensitive implementation,Books,717.16,399,ACTIVE,2026-02-12 02:15:44.763103
+145,Synergized empowering parallelism,Beauty,667.19,63,INACTIVE,2026-07-08 03:33:53.294994
+146,Multi-tiered content-based core,Clothing,1779.53,380,INACTIVE,2026-03-28 14:07:10.827962
+147,Adaptive system-worthy moratorium,Clothing,681.38,95,INACTIVE,2026-05-23 09:48:33.927955
+148,Exclusive explicit frame,Beauty,997.56,473,INACTIVE,2025-05-12 15:23:03.345228
+149,Ameliorated fault-tolerant middleware,Electronics,1455.53,40,INACTIVE,2026-06-10 01:26:18.528281
+150,Proactive multimedia policy,Sports,1990.22,92,INACTIVE,2025-12-01 18:21:03.675096
+151,Managed 24/7 flexibility,Books,209.68,167,INACTIVE,2025-09-08 09:42:41.765887
+152,Down-sized 24/7 hub,Books,894.6,367,INACTIVE,2025-12-26 09:50:52.791490
+153,Multi-tiered zero administration middleware,Home,1381.08,179,INACTIVE,2026-02-15 21:54:31.310611
+154,Compatible reciprocal throughput,Electronics,1454.99,466,INACTIVE,2026-07-05 03:26:18.076108
+155,Ergonomic zero tolerance software,Sports,1996.31,140,ACTIVE,2025-08-27 09:40:14.355469
+156,Function-based regional standardization,Electronics,1344.01,207,INACTIVE,2026-07-26 04:39:28.185312
+157,Object-based interactive productivity,Sports,1603.19,347,ACTIVE,2026-01-27 14:41:21.355023
+158,Diverse radical support,Electronics,289.85,311,INACTIVE,2025-05-23 05:25:28.163121
+159,Focused encompassing contingency,Electronics,256.83,120,INACTIVE,2025-08-30 10:31:21.756253
+160,Proactive methodical functionalities,Books,768.79,290,ACTIVE,2026-05-07 14:00:50.866126
+161,Diverse heuristic open system,Sports,311.11,230,INACTIVE,2025-01-24 05:09:50.008952
+162,Operative attitude-oriented initiative,Books,890.66,39,ACTIVE,2025-06-16 03:42:33.569900
+163,Configurable client-server workforce,Sports,737.07,160,INACTIVE,2025-12-19 15:27:01.539476
+164,Assimilated solution-oriented hub,Home,1921.24,13,ACTIVE,2025-11-26 08:30:45.911001
+165,Diverse coherent parallelism,Clothing,1037.9,467,ACTIVE,2025-04-30 19:17:48.070013
+166,Compatible fresh-thinking throughput,Books,1551.05,360,INACTIVE,2025-07-30 21:02:31.882964
+167,Balanced coherent parallelism,Home,1992.75,146,INACTIVE,2025-05-24 02:42:09.381536
+168,Versatile static standardization,Home,249.66,436,ACTIVE,2025-12-02 19:51:36.450376
+169,Focused intermediate encryption,Clothing,349.45,365,INACTIVE,2025-09-07 09:59:55.681086
+170,Up-sized coherent project,Electronics,1621.97,495,INACTIVE,2025-07-29 11:36:23.752367
+171,Secured uniform frame,Beauty,698.11,33,INACTIVE,2026-02-01 02:28:02.743503
+172,Enterprise-wide 6thgeneration Internet solution,Books,1703.47,364,ACTIVE,2025-07-06 09:13:08.332592
+173,Managed stable firmware,Books,1019.97,62,ACTIVE,2026-01-02 11:04:28.846031
+174,Assimilated secondary secured line,Home,477.29,252,ACTIVE,2025-11-10 15:56:22.362883
+175,Cross-platform content-based database,Books,1110.27,188,INACTIVE,2026-03-16 18:20:41.615846
+176,Face-to-face solution-oriented monitoring,Sports,263.89,452,ACTIVE,2026-04-12 09:02:56.334803
+177,Balanced 6thgeneration flexibility,Electronics,622.03,367,INACTIVE,2025-11-27 05:24:37.770360
+178,Face-to-face tertiary complexity,Sports,824.54,209,ACTIVE,2024-11-19 22:13:15.029702
+179,Stand-alone attitude-oriented conglomeration,Home,1944.9,328,ACTIVE,2026-06-17 06:45:12.281403
+180,Cross-platform context-sensitive toolset,Clothing,934.34,264,INACTIVE,2024-11-28 17:14:58.363149
+181,User-friendly explicit migration,Home,1756.53,399,ACTIVE,2026-01-31 03:04:47.771610
+182,Customizable transitional hub,Home,868.07,466,ACTIVE,2025-11-01 05:48:37.560372
+183,Optional needs-based instruction set,Electronics,1038.61,155,ACTIVE,2025-10-30 09:15:49.798350
+184,Open-architected exuding access,Home,648.71,363,ACTIVE,2024-12-18 23:04:43.246660
+185,Reduced bifurcated moderator,Books,1895.23,265,INACTIVE,2025-05-30 15:58:09.166439
+186,Realigned national approach,Electronics,504.96,325,INACTIVE,2025-07-15 12:00:57.153711
+187,Integrated web-enabled challenge,Home,1251.92,314,ACTIVE,2026-06-07 13:01:19.915241
+188,Synergistic 24hour analyzer,Sports,1283.77,303,ACTIVE,2026-05-07 10:53:40.417437
+189,Enhanced non-volatile middleware,Home,1319.17,368,INACTIVE,2026-08-03 19:23:55.775714
+190,Proactive leadingedge productivity,Sports,87.18,442,ACTIVE,2025-10-22 01:57:52.139859
+191,Fully-configurable foreground model,Electronics,95.7,328,INACTIVE,2025-05-31 02:03:38.122430
+192,User-centric human-resource productivity,Beauty,425.56,292,INACTIVE,2025-07-24 11:00:29.874654
+193,Open-architected value-added function,Sports,1279.79,254,INACTIVE,2026-04-23 04:17:57.730770
+194,Decentralized radical Internet solution,Beauty,1913.52,247,ACTIVE,2026-03-17 00:48:57.390349
+195,Extended explicit protocol,Beauty,815.15,232,ACTIVE,2025-02-12 16:56:00.945252
+196,Seamless client-server structure,Beauty,124.53,225,INACTIVE,2026-08-14 11:17:01.930627
+197,Digitized context-sensitive archive,Clothing,931.56,174,ACTIVE,2025-02-22 05:06:44.104266
+198,Ameliorated fault-tolerant solution,Books,1723.66,163,INACTIVE,2024-11-19 17:30:49.385293
+199,Horizontal cohesive pricing structure,Clothing,265.88,189,ACTIVE,2025-04-06 18:28:35.715491
+200,Extended bifurcated forecast,Books,487.27,62,INACTIVE,2026-03-23 06:09:26.511060

@@ -1,0 +1,7 @@
+{
+  "duplicate_customer": 20,
+  "null_customer_first_name": 20,
+  "invalid_order_customer_fk": 60,
+  "wrong_order_status": 60,
+  "wrong_payment_amount": 90
+}

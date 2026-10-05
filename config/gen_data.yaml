@@ -1,0 +1,94 @@
+seed: 42
+
+output:
+  folder: "data/raw"
+  overwrite: true
+
+dataset:
+  customers: 1000
+  products: 200
+  orders: 3000
+
+generation:
+  product:
+    min_price: 5.0
+    max_price: 2000.0
+    min_stock: 0
+    max_stock: 500
+
+  order:
+    start_date: "2025-01-01"
+    end_date: "2026-10-01"
+
+  order_items:
+    min_per_order: 1
+    max_per_order: 5
+
+statuses:
+  customer:
+    - ACTIVE
+    - INACTIVE
+
+  product:
+    - ACTIVE
+    - INACTIVE
+
+  order:
+    - PENDING
+    - PAID
+    - SHIPPED
+    - COMPLETED
+    - CANCELLED
+
+  payment:
+    - SUCCESS
+    - FAILED
+    - PENDING
+
+payment_methods:
+  - CARD
+  - PAYPAL
+  - BANK_TRANSFER
+
+errors:
+  enabled: true
+
+  rules:
+    - name: duplicate_customer
+      dataset: customers
+      operation: duplicate
+      rate: 0.02
+
+    - name: null_customer_first_name
+      dataset: customers
+      operation: set
+      column: first_name
+      value: null
+      rate: 0.02
+
+    - name: invalid_order_customer_fk
+      dataset: orders
+      operation: invalid_fk
+      column: customer_id
+      reference_dataset: customers
+      reference_column: customer_id
+      rate: 0.02
+      offset: 100000
+
+    - name: wrong_order_status
+      dataset: orders
+      operation: set
+      column: status
+      value: INVALID_STATUS
+      rate: 0.02
+
+    - name: wrong_payment_amount
+      dataset: payments
+      operation: multiply
+      column: amount
+      value: 1.25
+      rate: 0.03
+
+metadata:
+  generate_expected_issues: true
+  expected_issues_file: "expected_issues.json"
