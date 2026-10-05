@@ -1,0 +1,97 @@
+# Only business/data-quality rules that cannot be derived from PostgreSQL schema.
+# Structural rules such as datatype, NOT NULL, PK/UNIQUE, FK and VARCHAR length
+# are discovered automatically from the target PostgreSQL metadata.
+
+datasets:
+
+  customers:
+    rules:
+      - name: valid_customer_status
+        type: allowed_values
+        column: status
+        values:
+          - ACTIVE
+          - INACTIVE
+        reason: INVALID_CUSTOMER_STATUS
+
+  products:
+    rules:
+      - name: valid_product_status
+        type: allowed_values
+        column: status
+        values:
+          - ACTIVE
+          - INACTIVE
+        reason: INVALID_PRODUCT_STATUS
+
+      - name: positive_product_price
+        type: min_value
+        column: price
+        value: 0
+        inclusive: false
+        reason: INVALID_PRODUCT_PRICE
+
+      - name: non_negative_stock
+        type: min_value
+        column: stock_quantity
+        value: 0
+        inclusive: true
+        reason: INVALID_STOCK_QUANTITY
+
+  orders:
+    rules:
+      - name: valid_order_status
+        type: allowed_values
+        column: status
+        values:
+          - PENDING
+          - PAID
+          - SHIPPED
+          - COMPLETED
+          - CANCELLED
+        reason: INVALID_ORDER_STATUS
+
+  order_items:
+    rules:
+      - name: positive_quantity
+        type: min_value
+        column: quantity
+        value: 0
+        inclusive: false
+        reason: INVALID_QUANTITY
+
+      - name: positive_unit_price
+        type: min_value
+        column: unit_price
+        value: 0
+        inclusive: false
+        reason: INVALID_UNIT_PRICE
+
+  payments:
+    rules:
+      - name: valid_payment_status
+        type: allowed_values
+        column: status
+        values:
+          - SUCCESS
+          - FAILED
+          - PENDING
+        reason: INVALID_PAYMENT_STATUS
+
+      - name: valid_payment_method
+        type: allowed_values
+        column: payment_method
+        values:
+          - CARD
+          - PAYPAL
+          - BANK_TRANSFER
+        reason: INVALID_PAYMENT_METHOD
+
+      - name: payment_amount_matches_order_total
+        type: equals_reference
+        column: amount
+        reference_dataset: orders
+        reference_column: total_amount
+        join_on: order_id
+        tolerance: 0.01
+        reason: WRONG_PAYMENT_AMOUNT

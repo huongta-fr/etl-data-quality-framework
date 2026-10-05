@@ -1,0 +1,51 @@
+2026-10-05 21:44:09,446 | INFO | ======================================================================
+2026-10-05 21:44:09,446 | INFO | ETL START
+2026-10-05 21:44:09,446 | INFO | Log file: logs/etl_20261005_214409.log
+2026-10-05 21:44:09,447 | INFO | ----- EXTRACT START -----
+2026-10-05 21:44:09,452 | INFO | [EXTRACT] dataset=customers file=data/raw/seed_42/customers.csv rows=1020 columns=7
+2026-10-05 21:44:09,453 | INFO | [EXTRACT] dataset=products file=data/raw/seed_42/products.csv rows=200 columns=7
+2026-10-05 21:44:09,456 | INFO | [EXTRACT] dataset=orders file=data/raw/seed_42/orders.csv rows=3000 columns=5
+2026-10-05 21:44:09,459 | INFO | [EXTRACT] dataset=order_items file=data/raw/seed_42/order_items.csv rows=9129 columns=5
+2026-10-05 21:44:09,464 | INFO | [EXTRACT] dataset=payments file=data/raw/seed_42/payments.csv rows=3000 columns=7
+2026-10-05 21:44:09,464 | INFO | ----- EXTRACT SUCCESS -----
+2026-10-05 21:44:09,464 | INFO | ----- TRANSFORM START -----
+2026-10-05 21:44:09,682 | INFO | [TRANSFORM] dataset=customers input=1020 clean=981 rejected=39
+2026-10-05 21:44:09,691 | INFO | [TRANSFORM] dataset=products input=200 clean=200 rejected=0
+2026-10-05 21:44:09,700 | INFO | [TRANSFORM][BUSINESS_RULE] dataset=orders rule=valid_order_status reason=INVALID_ORDER_STATUS count=55
+2026-10-05 21:44:09,700 | INFO | [TRANSFORM] dataset=orders input=3000 clean=2829 rejected=171
+2026-10-05 21:44:09,708 | INFO | [TRANSFORM] dataset=order_items input=9129 clean=8615 rejected=514
+2026-10-05 21:44:09,723 | INFO | [TRANSFORM][BUSINESS_RULE] dataset=payments rule=payment_amount_matches_order_total reason=WRONG_PAYMENT_AMOUNT count=85
+2026-10-05 21:44:09,723 | INFO | [TRANSFORM] dataset=payments input=3000 clean=2744 rejected=256
+2026-10-05 21:44:09,727 | INFO | [REJECT] dataset=customers rows=39 file=data/rejected/seed_42/customers_rejected.csv
+2026-10-05 21:44:09,728 | INFO | [REJECT] dataset=orders rows=171 file=data/rejected/seed_42/orders_rejected.csv
+2026-10-05 21:44:09,729 | INFO | [REJECT] dataset=order_items rows=514 file=data/rejected/seed_42/order_items_rejected.csv
+2026-10-05 21:44:09,730 | INFO | [REJECT] dataset=payments rows=256 file=data/rejected/seed_42/payments_rejected.csv
+2026-10-05 21:44:09,730 | INFO | ----- TRANSFORM SUCCESS -----
+2026-10-05 21:44:09,730 | INFO | ----- LOAD START -----
+2026-10-05 21:44:09,743 | INFO | [LOAD] mode=full_refresh - clearing target tables
+2026-10-05 21:44:09,758 | INFO | [LOAD] START dataset=customers target=customer rows=981
+2026-10-05 21:44:09,872 | INFO | [LOAD] SUCCESS dataset=customers target=customer rows=981
+2026-10-05 21:44:09,872 | INFO | [LOAD] START dataset=products target=product rows=200
+2026-10-05 21:44:09,894 | INFO | [LOAD] SUCCESS dataset=products target=product rows=200
+2026-10-05 21:44:09,895 | INFO | [LOAD] START dataset=orders target=order rows=2829
+2026-10-05 21:44:10,093 | INFO | [LOAD] SUCCESS dataset=orders target=order rows=2829
+2026-10-05 21:44:10,093 | INFO | [LOAD] START dataset=order_items target=order_item rows=8615
+2026-10-05 21:44:10,677 | INFO | [LOAD] SUCCESS dataset=order_items target=order_item rows=8615
+2026-10-05 21:44:10,677 | INFO | [LOAD] START dataset=payments target=payment rows=2744
+2026-10-05 21:44:10,950 | INFO | [LOAD] SUCCESS dataset=payments target=payment rows=2744
+2026-10-05 21:44:10,952 | INFO | [LOAD] Transaction COMMIT
+2026-10-05 21:44:10,952 | INFO | ----- LOAD SUCCESS -----
+2026-10-05 21:44:10,952 | INFO | ===== ETL SUMMARY =====
+2026-10-05 21:44:10,952 | INFO | customers | input=1020 | clean=981 | rejected=39 | issues={'NULL_FIRST_NAME': 20, 'DUPLICATE_CUSTOMER_ID': 19}
+2026-10-05 21:44:10,952 | INFO | products | input=200 | clean=200 | rejected=0 | issues={}
+2026-10-05 21:44:10,952 | INFO | orders | input=3000 | clean=2829 | rejected=171 | issues={'INVALID_FK_CUSTOMER_ID': 116, 'INVALID_ORDER_STATUS': 55}
+2026-10-05 21:44:10,952 | INFO | order_items | input=9129 | clean=8615 | rejected=514 | issues={'INVALID_FK_ORDER_ID': 514}
+2026-10-05 21:44:10,952 | INFO | payments | input=3000 | clean=2744 | rejected=256 | issues={'INVALID_FK_ORDER_ID': 171, 'WRONG_PAYMENT_AMOUNT': 85}
+2026-10-05 21:44:10,953 | INFO | customers -> customer | loaded=981 | status=SUCCESS
+2026-10-05 21:44:10,953 | INFO | products -> product | loaded=200 | status=SUCCESS
+2026-10-05 21:44:10,953 | INFO | orders -> order | loaded=2829 | status=SUCCESS
+2026-10-05 21:44:10,953 | INFO | order_items -> order_item | loaded=8615 | status=SUCCESS
+2026-10-05 21:44:10,953 | INFO | payments -> payment | loaded=2744 | status=SUCCESS
+2026-10-05 21:44:10,953 | INFO | ETL STATUS: SUCCESS
+2026-10-05 21:44:10,953 | INFO | Duration: 1.51 seconds
+2026-10-05 21:44:10,953 | INFO | ======================================================================

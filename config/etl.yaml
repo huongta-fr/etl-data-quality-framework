@@ -1,0 +1,37 @@
+environment: local
+
+data:
+  raw_path: data/raw/seed_42
+  rejected_path: data/rejected/seed_42
+
+database:
+  dialect: postgresql+psycopg
+  host: localhost
+  port: 5432
+  name: ecommerce
+  user: etl_user
+  password: etl_password
+  schema: public
+
+load:
+  mode: full_refresh
+  chunksize: 500
+
+tables:
+  customers:
+    target_table: customer
+  products:
+    target_table: product
+  orders:
+    target_table: order
+  order_items:
+    target_table: order_item
+  payments:
+    target_table: payment
+
+load_order:
+  - customers
+  - products
+  - orders
+  - order_items
+  - payments
