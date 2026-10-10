@@ -2,18 +2,17 @@ from pathlib import Path
 import json
 import random
 from datetime import datetime
+import sys
+import argparse
 
 import pandas as pd
 import yaml
 from faker import Faker
 
+# Add project root to Python path
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
-CONFIG_PATH = Path("config/gen_data.yaml")
-
-
-def load_config(path: Path) -> dict:
-    with open(path, "r", encoding="utf-8") as file:
-        return yaml.safe_load(file)
+from utils.config_loader import load_config
 
 
 def setup_random_seed(seed: int):
@@ -423,7 +422,23 @@ def save_csv(
 
 
 def main():
-    config = load_config(CONFIG_PATH)
+    # Parse command-line arguments
+    parser = argparse.ArgumentParser(
+        description="Generate raw data with optional seed override"
+    )
+    parser.add_argument(
+        "--seed",
+        type=int,
+        default=None,
+        help="Override the seed from config file"
+    )
+    args = parser.parse_args()
+    
+    config = load_config("gen_data")
+
+    # Override seed if provided via command line
+    if args.seed is not None:
+        config["seed"] = args.seed
 
     seed = config["seed"]
 
@@ -431,12 +446,17 @@ def main():
 
     fake = Faker()
 
-    base_output_folder = Path(
-        config["output"]["folder"]
+    root_output_folder = Path(
+        config["data"]["root"]
+    )
+
+    data_output_folder = Path(
+        config["data"]["raw_folder"]
     )
 
     output_folder = (
-        base_output_folder
+        root_output_folder
+        / data_output_folder
         / f"seed_{seed}"
     )
 

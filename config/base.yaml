@@ -1,0 +1,19 @@
+environment: local
+
+data:
+  root: data
+  raw_folder: raw
+  rejected_folder: rejected
+  bronze_path: bronze
+  silver_path: silver
+  gold_path: gold
+
+
+database:
+  dialect: postgresql+psycopg
+  host: localhost
+  port: 5432
+  name: ecommerce
+  user: etl_user
+  password: etl_password
+  schema: public

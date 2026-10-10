@@ -7,13 +7,6 @@ from sqlalchemy import create_engine, text
 
 LOGGER = logging.getLogger(__name__)
 
-ETL_CONFIG_PATH = Path("config/etl.yaml")
-
-
-def load_yaml(path: Path) -> dict:
-    with open(path, "r", encoding="utf-8") as file:
-        return yaml.safe_load(file)
-
 
 def build_db_url(config: dict) -> str:
     db = config["database"]
@@ -59,15 +52,13 @@ def clear_target_tables(
 
 
 def load_data(
+    config: dict,
     clean_data: dict[str, pd.DataFrame],
 ) -> dict:
     """
     Load reads only ETL runtime/table mapping config.
     It does not contain validation logic.
     """
-    config = load_yaml(
-        ETL_CONFIG_PATH
-    )
 
     engine = get_engine(
         config

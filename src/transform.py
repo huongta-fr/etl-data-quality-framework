@@ -18,15 +18,6 @@ from sqlalchemy.sql.sqltypes import (
 
 LOGGER = logging.getLogger(__name__)
 
-ETL_CONFIG_PATH = Path("config/etl.yaml")
-DQ_CONFIG_PATH = Path("config/data_quality.yaml")
-
-
-def load_yaml(path: Path) -> dict:
-    with open(path, "r", encoding="utf-8") as file:
-        return yaml.safe_load(file)
-
-
 def build_db_url(config: dict) -> str:
     db = config["database"]
 
@@ -673,31 +664,26 @@ def build_transform_report(
 
 
 def transform_data(
+    config: dict,
     raw_data: dict[str, pd.DataFrame],
 ) -> tuple[
     dict[str, pd.DataFrame],
     dict[str, pd.DataFrame],
     dict,
 ]:
-    etl_config = load_yaml(
-        ETL_CONFIG_PATH
-    )
-    dq_config = load_yaml(
-        DQ_CONFIG_PATH
-    )
 
     target_metadata = get_target_metadata(
-        etl_config
+        config
     )
 
     clean_data = {}
     rejected_data = {}
 
-    for dataset_name in etl_config[
+    for dataset_name in config[
         "load_order"
     ]:
         rules = (
-            dq_config
+            config
             .get("datasets", {})
             .get(dataset_name, {})
             .get("rules", [])

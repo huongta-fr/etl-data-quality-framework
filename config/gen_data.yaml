@@ -1,9 +1,5 @@
 seed: 42
 
-output:
-  folder: "data/raw"
-  overwrite: true
-
 dataset:
   customers: 1000
   products: 200
@@ -17,7 +13,7 @@ generation:
     max_stock: 500
 
   order:
-    start_date: "2025-01-01"
+    start_date: "2023-01-01"
     end_date: "2026-10-01"
 
   order_items:
