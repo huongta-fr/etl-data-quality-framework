@@ -1,0 +1,210 @@
+{
+  "customers": {
+    "columns": {
+      "customer_id": {
+        "type": "INTEGER",
+        "nullable": false
+      },
+      "first_name": {
+        "type": "VARCHAR(100)",
+        "nullable": false
+      },
+      "last_name": {
+        "type": "VARCHAR(100)",
+        "nullable": false
+      },
+      "email": {
+        "type": "VARCHAR(255)",
+        "nullable": false
+      },
+      "phone": {
+        "type": "VARCHAR(50)",
+        "nullable": true
+      },
+      "status": {
+        "type": "VARCHAR(20)",
+        "nullable": false
+      },
+      "created_at": {
+        "type": "TIMESTAMP",
+        "nullable": false
+      }
+    },
+    "primary_key": [
+      "customer_id"
+    ],
+    "unique_constraints": [],
+    "foreign_keys": []
+  },
+  "products": {
+    "columns": {
+      "product_id": {
+        "type": "INTEGER",
+        "nullable": false
+      },
+      "product_name": {
+        "type": "VARCHAR(255)",
+        "nullable": false
+      },
+      "category": {
+        "type": "VARCHAR(100)",
+        "nullable": true
+      },
+      "price": {
+        "type": "NUMERIC(10, 2)",
+        "nullable": false
+      },
+      "stock_quantity": {
+        "type": "INTEGER",
+        "nullable": false
+      },
+      "status": {
+        "type": "VARCHAR(20)",
+        "nullable": false
+      },
+      "created_at": {
+        "type": "TIMESTAMP",
+        "nullable": false
+      }
+    },
+    "primary_key": [
+      "product_id"
+    ],
+    "unique_constraints": [],
+    "foreign_keys": []
+  },
+  "orders": {
+    "columns": {
+      "order_id": {
+        "type": "INTEGER",
+        "nullable": false
+      },
+      "customer_id": {
+        "type": "INTEGER",
+        "nullable": false
+      },
+      "order_date": {
+        "type": "TIMESTAMP",
+        "nullable": false
+      },
+      "status": {
+        "type": "VARCHAR(30)",
+        "nullable": false
+      },
+      "total_amount": {
+        "type": "NUMERIC(10, 2)",
+        "nullable": false
+      }
+    },
+    "primary_key": [
+      "order_id"
+    ],
+    "unique_constraints": [],
+    "foreign_keys": [
+      {
+        "columns": [
+          "customer_id"
+        ],
+        "reference_dataset": "customers",
+        "reference_columns": [
+          "customer_id"
+        ]
+      }
+    ]
+  },
+  "order_items": {
+    "columns": {
+      "order_item_id": {
+        "type": "INTEGER",
+        "nullable": false
+      },
+      "order_id": {
+        "type": "INTEGER",
+        "nullable": false
+      },
+      "product_id": {
+        "type": "INTEGER",
+        "nullable": false
+      },
+      "quantity": {
+        "type": "INTEGER",
+        "nullable": false
+      },
+      "unit_price": {
+        "type": "NUMERIC(10, 2)",
+        "nullable": false
+      }
+    },
+    "primary_key": [
+      "order_item_id"
+    ],
+    "unique_constraints": [],
+    "foreign_keys": [
+      {
+        "columns": [
+          "order_id"
+        ],
+        "reference_dataset": "orders",
+        "reference_columns": [
+          "order_id"
+        ]
+      },
+      {
+        "columns": [
+          "product_id"
+        ],
+        "reference_dataset": "products",
+        "reference_columns": [
+          "product_id"
+        ]
+      }
+    ]
+  },
+  "payments": {
+    "columns": {
+      "payment_id": {
+        "type": "INTEGER",
+        "nullable": false
+      },
+      "order_id": {
+        "type": "INTEGER",
+        "nullable": false
+      },
+      "payment_date": {
+        "type": "TIMESTAMP",
+        "nullable": false
+      },
+      "payment_method": {
+        "type": "VARCHAR(50)",
+        "nullable": false
+      },
+      "amount": {
+        "type": "NUMERIC(10, 2)",
+        "nullable": false
+      },
+      "status": {
+        "type": "VARCHAR(30)",
+        "nullable": false
+      },
+      "transaction_id": {
+        "type": "VARCHAR(100)",
+        "nullable": true
+      }
+    },
+    "primary_key": [
+      "payment_id"
+    ],
+    "unique_constraints": [],
+    "foreign_keys": [
+      {
+        "columns": [
+          "order_id"
+        ],
+        "reference_dataset": "orders",
+        "reference_columns": [
+          "order_id"
+        ]
+      }
+    ]
+  }
+}
